@@ -2,15 +2,26 @@ import React from "react";
 import Logo from "../assets/Logo.jpeg";
 import SectionsHeadings from "../components/SectionsHeadings";
 
-const About = () => {
+const About = ({
+  sectionHeadingColors,
+  sectionHeadingColor,
+  borderColor,
+  aboutTextColor,
+}) => {
   return (
-    <section id="about" className="w-full px-4 flex flex-col">
+    <section id="about" className="w-full px-4 ">
       {/* Section Heading */}
-      <SectionsHeadings sectionsHeadings="About" />
+      <SectionsHeadings
+        sectionsHeadings="About"
+        sectionHeadingColor={sectionHeadingColor}
+      />
 
       {/* About Content */}
       <div className="flex justify-center mt-8">
-        <div className="w-full max-w-5xl p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div
+          className="w-full max-w-5xl p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
+          style={{ border: `2px solid ${borderColor}` }}
+        >
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
             {/* Profile Image */}
             <div className="shrink-0">
@@ -22,13 +33,16 @@ const About = () => {
             </div>
 
             {/* Text Content */}
-            <div className="text-gray-700 dark:text-gray-300 text-center md:text-left flex-1 space-y-4">
+            <div
+              className=" text-center md:text-left flex-1 space-y-4"
+              style={{ color: aboutTextColor }}
+            >
               <p className="text-lg md:text-xl leading-relaxed">
-                Hello, my name is{" "}
-                <span className="font-semibold">Hamza Khalid</span>, and I enjoy
-                creating things online. My passion for web development began in
-                2025 when I decided to learn how to build websites and web
-                applications.
+                Hello, my name is
+                <span className="font-semibold"> Hamza Khalid</span>, and I
+                enjoy creating things online. My passion for web development
+                began in 2025 when I decided to learn how to build websites and
+                web applications.
               </p>
 
               <p className="text-lg md:text-xl leading-relaxed">

@@ -1,5 +1,3 @@
-import React from "react";
-
 const NavLinks = ({ navLinks, activeLink, handleNavClick }) => {
   return (
     <nav className="flex flex-col md:flex-row gap-4 md:gap-6">

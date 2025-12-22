@@ -1,4 +1,4 @@
-const Skills = () => {
+const Skills = ({ skillHeadingColor }) => {
   const mySkills = [
     "React.js",
     "JavaScript (ES6+)",
@@ -11,7 +11,12 @@ const Skills = () => {
 
   return (
     <section id="skills" className="mt-12">
-      <h2 className="text-2xl font-bold mb-4">Technical Skills</h2>
+      <h2
+        className="text-2xl font-bold mb-4"
+        style={{ color: skillHeadingColor }}
+      >
+        Technical Skills
+      </h2>
 
       <div className="flex flex-wrap gap-4">
         {mySkills.map((skill) => (

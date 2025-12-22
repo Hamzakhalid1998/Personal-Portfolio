@@ -1,23 +1,29 @@
-const Card = ({ title, subtitle, duration, description, children }) => {
+const Card = ({
+  title,
+  subtitle,
+  subtitleColor,
+  duration,
+  description,
+  style,
+}) => {
   return (
-    <div className="p-6 md:p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 ">
-      <h3 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white">
+    <div
+      className="p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 w-full"
+      style={style} // dynamic border color
+    >
+      <h3 style={{ color: subtitleColor }} className="text-lg font-bold">
         {title}
       </h3>
-      {subtitle && (
-        <p className="text-gray-600 dark:text-gray-400 mt-1 md:mt-2 font-medium">
-          {subtitle}
-        </p>
-      )}
-      {duration && (
-        <p className="text-gray-500 dark:text-gray-400 mt-1 md:mt-2">
-          {duration}
-        </p>
-      )}
-      {description && (
-        <p className="text-gray-700 dark:text-gray-300 mt-3">{description}</p>
-      )}
-      {children}
+      <h4
+        className="text-md font-semibold"
+        style={{ color: subtitleColor }} // company name
+      >
+        {subtitle}
+      </h4>
+      <span className="text-sm" style={{ color: subtitleColor }}>
+        {duration}
+      </span>
+      <div>{description}</div> {/* description handles its own color */}
     </div>
   );
 };

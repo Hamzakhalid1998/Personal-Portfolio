@@ -1,7 +1,12 @@
 import SectionsHeadings from "../components/SectionsHeadings";
 import Card from "../components/Card";
 
-const Education = () => {
+const Education = ({
+  sectionHeadingColor,
+  cardBorderColor,
+  institutionColor,
+  durationColor,
+}) => {
   const educationList = [
     {
       degree: "BS in Information Technology",
@@ -16,18 +21,24 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="w-full flex flex-col items-center">
+    <section id="education" className="px-4 w-full">
       {/* Section Heading */}
-      <SectionsHeadings sectionsHeadings="Education" />
+      <SectionsHeadings
+        sectionsHeadings="Education"
+        sectionHeadingColor={sectionHeadingColor}
+      />
 
       {/* Education Cards */}
-      <div className="flex flex-col gap-8 w-full mt-8 px-4 max-w-5xl">
+      <div className="flex flex-col mx-auto gap-8 w-full mt-8 px-4 max-w-5xl">
         {educationList.map((edu, index) => (
           <Card
             key={index}
             title={edu.degree}
             subtitle={edu.institution}
+            subtitleColor={institutionColor} // dynamic institution name color
             duration={edu.duration}
+            description={null} // no extra description for education
+            style={{ border: `2px solid ${cardBorderColor}` }} // dynamic border
           />
         ))}
       </div>
