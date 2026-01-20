@@ -1,23 +1,23 @@
-🌐 Hamza Khalid - Frontend React Developer Portfolio
+🌐 Hamza Khalid — Frontend React Developer Portfolio
 📖 About This Portfolio
 
-Hi! I'm Hamza Khalid, a passionate Frontend React Developer from Pakistan.
+Hi! I’m Hamza Khalid, a passionate Frontend React Developer from Pakistan.
 This portfolio showcases my skills, projects, experience, and education in web development.
-It’s fully responsive, interactive, and built with React.js and Tailwind CSS.
+It is fully responsive, interactive, and built with React.js and Tailwind CSS.
 
 🚀 Features
 
-✅ Responsive design for all devices
+✅ Fully responsive design for all devices
 
-✅ Smooth scrolling between sections
+✅ Smooth scrolling navigation
 
-✅ Interactive Hero, About, Skills, Projects, Education, Experience & Contact sections
+✅ Interactive sections: Hero, About, Skills, Projects, Education, Experience & Contact
 
 ✅ Contact form with email functionality
 
 ✅ Dark & Light mode support
 
-✅ Reusable components and modern UI
+✅ Modern UI with reusable components
 
 🛠 Technologies Used
 
@@ -25,61 +25,53 @@ Frontend: React.js, Tailwind CSS, HTML5, CSS3, JavaScript (ES6+)
 
 Version Control: Git & GitHub
 
-Icons & UI Enhancements: react-icons, Framer Motion
+UI Enhancements: react-icons, Framer Motion
 
 💼 Experience
-Frontend Web Developer at Inteelix Soft Software House (2025 - Present)
+Frontend Web Developer
 
-Developed responsive and interactive web applications using React.js
+Inteelix Soft Software House
+📅 Jan-2025 – Dec-2025
+✔ Built responsive and interactive web applications using React.js
+✔ Developed reusable UI components and modular code structure
+✔ Integrated REST APIs and managed state efficiently
+✔ Converted Figma/PSD designs into pixel-perfect UI
+✔ Ensured cross-browser compatibility and mobile responsiveness
+✔ Used Git & GitHub for version control and collaboration
 
-Implemented dynamic UI components and reusable code modules
+Frontend Web Developer
 
-Integrated REST APIs and managed application state effectively
-
-Collaborated with designers to convert Figma/PSD designs into functional websites
-
-Ensured cross-browser and mobile responsiveness
-
-Used Git & GitHub for version control and collaborative development
-
-Frontend Web Developer at Enigmatix Software House (Jan 2023 – Dec 2024)
-
-Developed scalable web applications using React.js, JavaScript, HTML, CSS, and Tailwind CSS
-
-Translated UI/UX designs into clean, maintainable, and high-performance front-end code
-
-Built reusable components for consistency and faster development cycles
-
-Collaborated with backend developers to deliver user-centric solutions
-
-Optimized applications for performance, accessibility, and cross-browser compatibility
-
-Maintained and enhanced existing applications by fixing bugs and implementing improvements
+Enigmatix Software House
+📅 Jan 2023 – Dec 2024
+✔ Developed scalable web applications using React.js, JavaScript, HTML, CSS, Tailwind CSS
+✔ Translated UI/UX designs into clean and maintainable front-end code
+✔ Built reusable components for faster development cycles
+✔ Collaborated with backend developers to deliver user-focused solutions
+✔ Optimized applications for performance, accessibility, and cross-browser compatibility
+✔ Maintained and enhanced existing applications by fixing bugs and implementing improvements
 
 🎓 Education
 
-BS in Information Technology (2021 - 2023) — Islamia University of Bahawalpur
+BS in Information Technology (2021 – 2023) — Islamia University of Bahawalpur
 
-BSc  (2018 - 2020) — Millat Group of Colleges
+BSc (2018 – 2020) — Millat Group of Colleges
 
 💻 Projects
 
 Here are some featured projects in my portfolio:
 
-Project 1: [[GitHub Link](https://github.com/Hamzakhalid1998/General-Hospital-Website)]
+General Hospital Website — GitHub Link
 
-Project 2: [GitHub Link]](https://github.com/Hamzakhalid1998/Arc-Holdings)]
+Arc Holdings Construction Website — GitHub Link
 
-Project 3: [GitHub Link]](https://github.com/Hamzakhalid1998/Intellixsoft-website)]
+Intellix Soft Website — GitHub Link
 
 📫 Contact Me
 
 ✉️ Email: hamza_khalid69@yahoo.com
 
 📞 Phone: +971 55 611 7316
-
 📍 Location: Sharjah, UAE
+🔗 LinkedIn: https://linkedin.com/in/hamza-khalid-845b7b266
 
-🔗 LinkedIn: linkedin.com/in/hamza-khalid-845b7b266
-
-🔗 GitHub: [(https://github.com/Hamzakhalid1998)]
+🔗 GitHub: https://github.com/Hamzakhalid1998
