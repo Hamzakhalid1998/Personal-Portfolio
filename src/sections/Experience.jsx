@@ -1,5 +1,6 @@
 import SectionsHeadings from "../components/SectionsHeadings";
 import Card from "../components/Card";
+import { motion } from "framer-motion";
 
 const Experience = ({
   sectionHeadingColor,
@@ -24,36 +25,83 @@ const Experience = ({
   ];
 
   return (
-    <section id="experience" className=" px-4 w-full">
-      <SectionsHeadings
-        sectionsHeadings="Experience"
-        sectionHeadingColor={sectionHeadingColor}
-      />
+    <section id="experience" className="px-4 w-full overflow-hidden">
+      {/* Section Heading */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <SectionsHeadings
+          sectionsHeadings="Experience"
+          sectionHeadingColor={sectionHeadingColor}
+        />
+      </motion.div>
 
-      <div className="flex flex-col gap-8 w-full mt-8 px-4 mx-auto max-w-5xl">
+      {/* Experience Cards */}
+      <motion.div
+        className="flex flex-col gap-8 w-full mt-8 px-4 mx-auto max-w-5xl"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+      >
         {experiences.map((exp, index) => (
-          <Card
+          <motion.div
             key={index}
-            title={exp.role}
-            subtitle={exp.company}
-            subtitleColor={companyNameColor} // dynamic company color
-            duration={exp.duration}
-            description={
-              <ul
-                className="list-disc list-inside space-y-2 mt-2"
-                style={{ color: experienceTextColor }} // dynamic responsibilities color
-              >
-                {exp.responsibilities.map((task, idx) => (
-                  <li key={idx} className="leading-relaxed">
-                    {task}
-                  </li>
-                ))}
-              </ul>
-            }
-            style={{ border: `2px solid ${cardBorderColor}` }} // dynamic border
-          />
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            <Card
+              title={exp.role}
+              subtitle={exp.company}
+              subtitleColor={companyNameColor}
+              duration={exp.duration}
+              description={
+                <motion.ul
+                  className="list-disc list-inside space-y-2 mt-2"
+                  style={{ color: experienceTextColor }}
+                  initial="hidden"
+                  animate="visible"
+                  variants={{
+                    hidden: {},
+                    visible: {
+                      transition: {
+                        staggerChildren: 0.1,
+                      },
+                    },
+                  }}
+                >
+                  {exp.responsibilities.map((task, idx) => (
+                    <motion.li
+                      key={idx}
+                      className="leading-relaxed"
+                      variants={{
+                        hidden: { opacity: 0, x: -10 },
+                        visible: { opacity: 1, x: 0 },
+                      }}
+                    >
+                      {task}
+                    </motion.li>
+                  ))}
+                </motion.ul>
+              }
+              style={{ border: `2px solid ${cardBorderColor}` }}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

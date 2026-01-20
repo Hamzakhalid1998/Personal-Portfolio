@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "name": "General Hospital Website",
+    "image": "/images/General-hospital.png",
+    "techStack": [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript"
+    ],
+    "description": "A modern and responsive hospital website with services, doctors, departments, and appointment UI.",
+    "liveDemo": "https://jocular-paprenjak-be8352.netlify.app/",
+    "github": "https://github.com/Hamzakhalid1998/General-Hospital-Website"
+  },
+  {
+    "id": 2,
+    "name": "Intellixsoft Website",
+    "image": "/images/Intellix.png",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "description": "A professional company website with clean UI, responsive layout, and service sections.",
+    "liveDemo": "https://your-live-demo-link.com",
+    "github": "https://github.com/Hamzakhalid1998/Intellixsoft-website"
+  },
+  {
+    "id": 3,
+    "name": "Arch Holdings Construction Website",
+    "image": "/images/ARC.png",
+    "techStack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "description": "A construction company website showcasing projects, services, and contact details with a clean responsive design.",
+    "liveDemo": "https://rainbow-parfait-783a1b.netlify.app/",
+    "github": "https://github.com/Hamzakhalid1998/Arc-Holdings"
+  },
+  {
+    "id": 4,
+    "name": "Employee Management System",
+    "image": "/images/Employee-Dashboard.png",
+    "techStack": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "LocalStorage"
+    ],
+    "description": "A simple employee CRUD system with add, edit, delete, status toggle, and local storage.",
+    "liveDemo": "https://stalwart-donut-0981c6.netlify.app/",
+    "github": "https://github.com/Hamzakhalid1998/Employee-Dashboard-JavaScript"
+  }
+]
